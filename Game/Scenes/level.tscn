@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://cmafobijnxpya"]
+[gd_scene load_steps=3 format=3 uid="uid://cmafobijnxpya"]
+
+[ext_resource type="Script" path="res://Scripts/level.gd" id="1_tvcgk"]
+[ext_resource type="PackedScene" uid="uid://df8atun07eri" path="res://Scenes/paddle.tscn" id="2_rx5ux"]
 
 [node name="Level" type="Node2D"]
+script = ExtResource("1_tvcgk")
+
+[node name="Paddle" parent="." instance=ExtResource("2_rx5ux")]
+position = Vector2(296, 728)
