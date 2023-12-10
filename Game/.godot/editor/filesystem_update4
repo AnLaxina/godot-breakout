@@ -3,3 +3,5 @@ res://Scripts/level.gd
 res://Scenes/paddle.tscn
 res://Scripts/paddle.gd
 res://Scenes/boundaries.tscn
+res://Scenes/ball.tscn
+res://Scripts/ball.gd
