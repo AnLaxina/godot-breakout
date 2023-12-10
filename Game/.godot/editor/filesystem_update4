@@ -1,3 +1,4 @@
 res://Scenes/level.tscn
 res://Scripts/level.gd
 res://Scenes/paddle.tscn
+res://Scripts/paddle.gd
