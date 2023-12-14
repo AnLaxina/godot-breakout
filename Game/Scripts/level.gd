@@ -7,6 +7,7 @@ extends Node2D
 @onready var red_group = get_tree().get_nodes_in_group("red")
 
 @onready var score_text = $ScoreText
+@onready var pause_menu = $PauseMenu
 
 func _ready():
 	# Sets the background color to black once the game opens
@@ -14,7 +15,11 @@ func _ready():
 	RenderingServer.set_default_clear_color("black")
 	
 	score_text.text = "Score : " + str(PlayerData.player_score)
-	
+
+func _process(_delta):
+	if Input.is_action_just_pressed("pause"):
+		pause_menu.show()
+		get_tree().paused = true
 
 # A custom signal that stems from ball.gd
 # This signal is emitted whenever the ball hits any physics object

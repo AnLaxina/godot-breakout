@@ -5,3 +5,6 @@ res://Scenes/ball.tscn
 res://Scenes/bricks.tscn
 res://Scenes/floor.gd
 res://Scripts/level.gd
+res://Scenes/pause_menu.tscn
+res://Scripts/pause_menu.gd
+res://Scripts/ball.gd

@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfv8fksngo0x7"]
+
+[ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="1_t2fom"]
+[ext_resource type="FontFile" uid="uid://dk4288mm67sgt" path="res://Assets/Fonts/Retro Gaming.ttf" id="1_y7rpc"]
+
+[node name="PauseMenu" type="Control"]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t2fom")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 344.0
+offset_right = 448.0
+offset_bottom = 536.0
+color = Color(0.0980392, 0.0901961, 0.152941, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 232.0
+offset_right = 416.0
+offset_bottom = 616.0
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="Title" type="Label" parent="CenterContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_y7rpc")
+theme_override_font_sizes/font_size = 30
+text = "Paused"
+
+[node name="Description" type="Label" parent="CenterContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_y7rpc")
+theme_override_font_sizes/font_size = 20
+text = "
+
+Press 'Space' to continue"
+
+[node name="ExitLabel" type="Label" parent="CenterContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_y7rpc")
+theme_override_font_sizes/font_size = 20
+text = "
+
+
+
+
+Press 'q' to exit the game"
