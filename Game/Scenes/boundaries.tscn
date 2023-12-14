@@ -1,4 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bt8s6ou2cc5gr"]
+[gd_scene load_steps=5 format=3 uid="uid://bt8s6ou2cc5gr"]
+
+[ext_resource type="Script" path="res://Scenes/floor.gd" id="1_6xixy"]
+[ext_resource type="FontFile" uid="uid://dk4288mm67sgt" path="res://Assets/Fonts/Retro Gaming.ttf" id="2_bixyn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aiemt"]
 size = Vector2(16, 800)
@@ -75,10 +78,43 @@ color = Color(0.454902, 0.454902, 0.454902, 1)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ceiling"]
 shape = SubResource("RectangleShape2D_20s35")
 
+[node name="Ceiling2" type="StaticBody2D" parent="."]
+position = Vector2(300, 96)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Ceiling2"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -292.0
+offset_top = -8.0
+offset_right = 292.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.454902, 0.454902, 0.454902, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ceiling2"]
+shape = SubResource("RectangleShape2D_20s35")
+
 [node name="Floor" type="Area2D" parent="."]
 position = Vector2(312, 800)
+script = ExtResource("1_6xixy")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
 position = Vector2(-12, 0)
 shape = SubResource("RectangleShape2D_20s35")
+
+[node name="LivesText" type="Label" parent="."]
+offset_left = 24.0
+offset_top = 16.0
+offset_right = 200.0
+offset_bottom = 80.0
+theme_override_fonts/font = ExtResource("2_bixyn")
+theme_override_font_sizes/font_size = 30
+text = "Lives: ♡♡♡"
+
+[connection signal="body_entered" from="Floor" to="Floor" method="_on_body_entered"]
