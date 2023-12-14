@@ -1,5 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1702221854
+::res://::1702521003
 icon.svg::CompressedTexture2D::1920022548743090237::1702221511::1702221523::1::::<><>::
-::res://Scenes/::1702221856
-level.tscn::PackedScene::5615436142430090388::1702221856::0::1::::<><>::
+::res://Scenes/::1702229456
+ball.tscn::PackedScene::5892482409013944493::1702229456::0::1::::<><>::res://Scripts/ball.gd
+boundaries.tscn::PackedScene::3789282211633070053::1702229456::0::1::::<><>::
+bricks.tscn::PackedScene::6408332017631649028::1702229456::0::1::::<><>::
+level.tscn::PackedScene::5615436142430090388::1702229455::0::1::::<><>::res://Scripts/level.gd<>uid://df8atun07eri::::res://Scenes/paddle.tscn<>uid://bt8s6ou2cc5gr::::res://Scenes/boundaries.tscn<>uid://cp7mla8gwqfbx::::res://Scenes/ball.tscn<>uid://cxkij6vgede2g::::res://Scenes/bricks.tscn
+paddle.tscn::PackedScene::222893109910762250::1702229455::0::1::::<><>::res://Scripts/paddle.gd
+::res://Scripts/::1702229453
+ball.gd::GDScript::-1::1702229453::0::1::::<>CharacterBody2D<>::
+level.gd::GDScript::-1::1702229444::0::1::::<>Node2D<>::
+paddle.gd::GDScript::-1::1702224568::0::1::::<>CharacterBody2D<>::
