@@ -4,3 +4,4 @@ res://Scenes/boundaries.tscn
 res://Scenes/ball.tscn
 res://Scenes/bricks.tscn
 res://Scenes/floor.gd
+res://Scripts/level.gd
