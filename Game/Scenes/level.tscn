@@ -18,3 +18,5 @@ position = Vector2(296, 728)
 position = Vector2(300, 664)
 
 [node name="Bricks" parent="." instance=ExtResource("5_8i12t")]
+
+[connection signal="on_broken_brick" from="Ball" to="." method="_on_ball_on_broken_brick"]
