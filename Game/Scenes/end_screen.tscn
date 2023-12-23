@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5nmiqpiun8nj"]
+
+[ext_resource type="Script" path="res://Scripts/end_screen.gd" id="1_fvj7k"]
+[ext_resource type="FontFile" uid="uid://dk4288mm67sgt" path="res://Assets/Fonts/Retro Gaming.ttf" id="1_qdiwh"]
+
+[node name="EndScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fvj7k")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 64.0
+offset_right = 447.0
+offset_bottom = 136.0
+theme_override_fonts/font = ExtResource("1_qdiwh")
+theme_override_font_sizes/font_size = 32
+text = "Game Over"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score" type="Label" parent="."]
+offset_left = 120.0
+offset_top = 160.0
+offset_right = 375.0
+offset_bottom = 232.0
+theme_override_fonts/font = ExtResource("1_qdiwh")
+theme_override_font_sizes/font_size = 32
+text = "Your Score: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AgainButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.08
+anchor_top = -0.12
+anchor_right = -0.08
+anchor_bottom = -0.12
+offset_left = 224.0
+offset_top = 544.0
+offset_right = 440.0
+offset_bottom = 616.0
+theme_override_fonts/font = ExtResource("1_qdiwh")
+theme_override_font_sizes/font_size = 28
+text = "Play Again"
+
+[node name="QuitButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.08
+anchor_top = -0.12
+anchor_right = -0.08
+anchor_bottom = -0.12
+offset_left = 224.0
+offset_top = 672.0
+offset_right = 440.0
+offset_bottom = 744.0
+theme_override_fonts/font = ExtResource("1_qdiwh")
+theme_override_font_sizes/font_size = 28
+text = "Quit
+"
+
+[connection signal="pressed" from="AgainButton" to="." method="_on_again_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

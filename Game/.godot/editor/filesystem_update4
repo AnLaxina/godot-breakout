@@ -1,9 +1,8 @@
-res://Scenes/paddle.tscn
 res://Scenes/level.tscn
+res://Scenes/paddle.tscn
 res://Scenes/boundaries.tscn
 res://Scenes/ball.tscn
-res://Scenes/bricks.tscn
 res://Scenes/pause_menu.tscn
+res://Scenes/end_screen.tscn
+res://Scripts/end_screen.gd
 res://Scenes/floor.gd
-res://Scripts/player_data.gd
-res://Scripts/paddle.gd

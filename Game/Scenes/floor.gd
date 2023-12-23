@@ -15,14 +15,13 @@ func _on_body_entered(body):
 	call_deferred("reload_level")
 	# If the player has no more lives, quit the game (FOR NOW)
 	if PlayerData.player_health < 0:
-		get_tree().quit()
+		call_deferred("change_scene", "res://Scenes/end_screen.tscn")
 
 func reload_level():
 	# Use this line to reset the bricks if a player loses a life
 	# I personally want the bricks to remain and will only be restarted if all lives reach 0
 	#	get_tree().reload_current_scene()
-	
-	
+
 	# Resets the paddle & ball to the original position in the 'level' scene
 	player_ball.position = Vector2(300, 664)
 	player_paddle.position = Vector2(296, 728)
@@ -47,3 +46,6 @@ func _input(event):
 		can_move = true
 		player_paddle.set_process(can_move)
 		player_ball.set_physics_process(can_move)
+
+func change_scene(path):
+	get_tree().change_scene_to_file(path)

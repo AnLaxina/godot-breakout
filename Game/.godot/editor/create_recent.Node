@@ -1,6 +1,7 @@
+Button
+Label
 Marker2D
 ColorRect
-Label
 CenterContainer
 StaticBody2D
 Node2D
