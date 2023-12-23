@@ -16,7 +16,7 @@ position = Vector2(296, 728)
 
 [node name="Boundaries" parent="." instance=ExtResource("3_fujq6")]
 
-[node name="Ball" parent="." instance=ExtResource("4_5mvlr")]
+[node name="Ball" parent="." groups=["player"] instance=ExtResource("4_5mvlr")]
 position = Vector2(300, 664)
 
 [node name="Bricks" parent="." instance=ExtResource("5_8i12t")]
