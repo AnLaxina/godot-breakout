@@ -1,0 +1,8 @@
+res://Scenes/ball.tscn::22ab433f4af0f5a0784af717ccda49e8::1703394827::res://.godot/exported/133200997/export-394aeccd7d7daf05a5efc5be101e4ae2-ball.scn
+res://Scenes/boundaries.tscn::107808d0b5ffc929298742ac4b7427b9::1703394827::res://.godot/exported/133200997/export-6d061c1871ae01f874664aa4fb93ff2d-boundaries.scn
+res://Scenes/bricks.tscn::fb9683d251b192ff557b3cb5aedf4071::1703319445::res://.godot/exported/133200997/export-c08cf7078d052bf99eca69b5a42fb9ae-bricks.scn
+res://Scenes/end_screen.tscn::c8d82d8f33d92e9341095e6de8021e59::1703394887::res://.godot/exported/133200997/export-f3c993bda37acd375b938c32f7a9fc2a-end_screen.scn
+res://Scenes/level.tscn::1c4344cb653b439cc1fc69fa92124910::1703394827::res://.godot/exported/133200997/export-509c53c765b75d897e8314a88ec6c376-level.scn
+res://Scenes/paddle.tscn::98b5e0db603e2ed96f57408ad287a594::1703394827::res://.godot/exported/133200997/export-c956b1aaa42e293177de45a9bd8e5e60-paddle.scn
+res://Scenes/pause_menu.tscn::4a44645079379fbfae4a756b00a522ce::1703394827::res://.godot/exported/133200997/export-e3d0420ddeb812b15edf3553f5556843-pause_menu.scn
+res://Scenes/title_screen.tscn::f320796d38109a002a1099d6ecb170eb::1703394827::res://.godot/exported/133200997/export-943bea3bfa5d9974424351a0a5431083-title_screen.scn
