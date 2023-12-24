@@ -9,7 +9,7 @@
 
 Two options:
 
-1. Download `Godot Breakout.exe` from the `Releases` tab
+1. Download `Godot.Breakout.exe` from the `Releases` tab
 2. Clone the repo & open the `project.godot` file in the `Game` folder
 
 ### Mac/Linux/Android
