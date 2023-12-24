@@ -1,0 +1,63 @@
+[gd_scene load_steps=3 format=3 uid="uid://dth7bo7dpha13"]
+
+[ext_resource type="FontFile" uid="uid://dk4288mm67sgt" path="res://Assets/Fonts/Retro Gaming.ttf" id="1_2piln"]
+[ext_resource type="Script" path="res://Scripts/title_screen.gd" id="1_uwvdr"]
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uwvdr")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 64.0
+offset_right = 416.0
+offset_bottom = 128.0
+theme_override_fonts/font = ExtResource("1_2piln")
+theme_override_font_sizes/font_size = 32
+text = "Breakout"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Controls" type="Label" parent="."]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 192.0
+offset_right = 494.0
+offset_bottom = 313.0
+theme_override_fonts/font = ExtResource("1_2piln")
+theme_override_font_sizes/font_size = 22
+text = "Controls:
+Movement - A, D (Left, Right)
+Pause - 'esc' key
+
+"
+horizontal_alignment = 1
+
+[node name="PlayButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 384.0
+offset_right = 384.0
+offset_bottom = 448.0
+theme_override_fonts/font = ExtResource("1_2piln")
+theme_override_font_sizes/font_size = 28
+text = "Play"
+
+[node name="QuitButton" type="Button" parent="."]
+offset_left = 192.0
+offset_top = 512.0
+offset_right = 384.0
+offset_bottom = 576.0
+theme_override_fonts/font = ExtResource("1_2piln")
+theme_override_font_sizes/font_size = 28
+text = "Quit
+"
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

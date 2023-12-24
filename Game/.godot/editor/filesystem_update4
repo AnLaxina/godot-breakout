@@ -1,3 +1,5 @@
+res://Scenes/title_screen.tscn
+res://Scripts/title_screen.gd
 res://Scenes/level.tscn
 res://Scenes/paddle.tscn
 res://Scenes/boundaries.tscn
@@ -5,4 +7,3 @@ res://Scenes/ball.tscn
 res://Scenes/pause_menu.tscn
 res://Scenes/end_screen.tscn
 res://Scripts/end_screen.gd
-res://Scenes/floor.gd

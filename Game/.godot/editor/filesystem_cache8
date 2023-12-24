@@ -1,19 +1,22 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1703351387
+::res://::1703394329
 icon.svg::CompressedTexture2D::1920022548743090237::1702926475::1702926520::1::::<><>::
 ::res://Assets/::1702926475
 ::res://Assets/Fonts/::1702926475
 Retro Gaming.ttf::FontFile::7922717484727054615::1702926475::1702926475::1::::<><>::
-::res://Scenes/::1703320483
-ball.tscn::PackedScene::5892482409013944493::1703320403::0::1::::<><>::res://Scripts/ball.gd
-boundaries.tscn::PackedScene::3789282211633070053::1703320403::0::1::::<><>::res://Scenes/floor.gd<>uid://dk4288mm67sgt::::res://Assets/Fonts/Retro Gaming.ttf
+::res://Scenes/::1703353226
+ball.tscn::PackedScene::5892482409013944493::1703352663::0::1::::<><>::res://Scripts/ball.gd
+boundaries.tscn::PackedScene::3789282211633070053::1703352663::0::1::::<><>::res://Scenes/floor.gd<>uid://dk4288mm67sgt::::res://Assets/Fonts/Retro Gaming.ttf
 bricks.tscn::PackedScene::6408332017631649028::1703319445::0::1::::<><>::
-floor.gd::GDScript::-1::1703320483::0::1::::<>Area2D<>::
-level.tscn::PackedScene::5615436142430090388::1703320402::0::1::::<><>::res://Scripts/level.gd<>uid://df8atun07eri::::res://Scenes/paddle.tscn<>uid://bt8s6ou2cc5gr::::res://Scenes/boundaries.tscn<>uid://cp7mla8gwqfbx::::res://Scenes/ball.tscn<>uid://cxkij6vgede2g::::res://Scenes/bricks.tscn<>uid://dk4288mm67sgt::::res://Assets/Fonts/Retro Gaming.ttf<>uid://bfv8fksngo0x7::::res://Scenes/pause_menu.tscn
-paddle.tscn::PackedScene::222893109910762250::1703320402::0::1::::<><>::res://Scripts/paddle.gd
-pause_menu.tscn::PackedScene::2782729978088575490::1703320403::0::1::::<><>::res://Scripts/pause_menu.gd<>uid://dk4288mm67sgt::::res://Assets/Fonts/Retro Gaming.ttf
-::res://Scripts/::1703319039
+end_screen.tscn::PackedScene::4519666657837714607::1703352725::0::1::::<><>::res://Scripts/end_screen.gd<>uid://dk4288mm67sgt::::res://Assets/Fonts/Retro Gaming.ttf
+floor.gd::GDScript::-1::1703352576::0::1::::<>Area2D<>::
+level.tscn::PackedScene::5615436142430090388::1703352663::0::1::::<><>::res://Scripts/level.gd<>uid://df8atun07eri::::res://Scenes/paddle.tscn<>uid://bt8s6ou2cc5gr::::res://Scenes/boundaries.tscn<>uid://cp7mla8gwqfbx::::res://Scenes/ball.tscn<>uid://cxkij6vgede2g::::res://Scenes/bricks.tscn<>uid://dk4288mm67sgt::::res://Assets/Fonts/Retro Gaming.ttf<>uid://bfv8fksngo0x7::::res://Scenes/pause_menu.tscn
+paddle.tscn::PackedScene::222893109910762250::1703352663::0::1::::<><>::res://Scripts/paddle.gd
+pause_menu.tscn::PackedScene::2782729978088575490::1703352663::0::1::::<><>::res://Scripts/pause_menu.gd<>uid://dk4288mm67sgt::::res://Assets/Fonts/Retro Gaming.ttf
+title_screen.tscn::PackedScene::8509246238960039320::1703353226::0::1::::<><>::uid://dk4288mm67sgt::::res://Assets/Fonts/Retro Gaming.ttf
+::res://Scripts/::1703352661
 ball.gd::GDScript::-1::1702926475::0::1::::<>CharacterBody2D<>::
+end_screen.gd::GDScript::-1::1703352661::0::1::::<>Control<>::
 level.gd::GDScript::-1::1702926475::0::1::::<>Node2D<>::
 paddle.gd::GDScript::-1::1703318643::0::1::::<>CharacterBody2D<>::
 pause_menu.gd::GDScript::-1::1702926475::0::1::::<>Control<>::
